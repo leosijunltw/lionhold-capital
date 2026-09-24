@@ -2,7 +2,7 @@
 
 A dependency-free static website that can be hosted free on GitHub Pages or Cloudflare Pages.
 
-The site contains the main `index.html` page and a separate `team.html` leadership page.
+The site contains four pages: the homepage (`index.html`), Services (`services.html`), About Us (`about.html`) and Meet the Team (`team.html`).
 
 ## Preview locally
 
@@ -31,6 +31,6 @@ Then visit `http://localhost:8000`.
 
 ## Before launch
 
-- The current contact address is `lionholdcapital@gmail.com`. Replace it in `index.html` when you move to a custom-domain inbox.
+- The current contact address is `lionholdcapital@gmail.com`. Replace it across the HTML files when you move to a custom-domain inbox.
 - Add your registered company name, jurisdiction, address and any required financial-services or investment disclaimers.
 - When you buy a domain, connect it in either GitHub Pages or Cloudflare Pages without changing the site.
