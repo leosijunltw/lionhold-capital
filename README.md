@@ -2,7 +2,7 @@
 
 A dependency-free static website that can be hosted free on GitHub Pages or Cloudflare Pages.
 
-The site contains four pages: the homepage (`index.html`), Services (`services.html`), About Us (`about.html`) and Meet the Team (`team.html`).
+The site contains six pages: the homepage (`index.html`), Services (`services.html`), About Us (`about.html`), Meet the Team (`team.html`), Fees (`fees.html`) and Careers (`careers.html`).
 
 ## Preview locally
 
