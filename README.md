@@ -31,6 +31,6 @@ Then visit `http://localhost:8000`.
 
 ## Before launch
 
-- The current contact address is `lionholdcapital@gmail.com`. Replace it across the HTML files when you move to a custom-domain inbox.
+- The primary contact address is `info@lionholdcapital.com`, and the public website is `https://lionholdcapital.com`.
 - Add your registered company name, jurisdiction, address and any required financial-services or investment disclaimers.
 - When you buy a domain, connect it in either GitHub Pages or Cloudflare Pages without changing the site.
