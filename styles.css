@@ -19,3 +19,9 @@
 .brand .brand-copy,.footer-brand .brand-copy{height:54px;justify-content:center}.brand .brand-khmer,.footer-brand .brand-khmer{font-size:22px;line-height:1.05;margin:0 0 4px}.brand .brand-copy strong,.footer-brand .brand-copy strong{font-size:17.6px;line-height:1;letter-spacing:.055em}.brand .brand-copy strong span,.footer-brand .brand-copy strong span{display:inline!important;font:inherit;line-height:inherit;letter-spacing:inherit;text-transform:inherit;margin:0}@media(max-width:560px){.brand .brand-copy,.footer-brand .brand-copy{height:44px}.brand .brand-khmer,.footer-brand .brand-khmer{font-size:18px;margin-bottom:3px}.brand .brand-copy strong,.footer-brand .brand-copy strong{font-size:14.4px}}
 .brand .brand-copy{transform:translateY(-2px)}footer{padding-left:clamp(24px,5vw,80px);padding-right:clamp(24px,5vw,80px)}
 .brand{gap:8px}.footer-brand .brand-logo{display:none}.footer-brand{gap:0}
+
+.capability-grid-two{grid-template-columns:repeat(2,1fr)}@media(max-width:560px){.capability-grid-two{grid-template-columns:1fr}}
+.footer-meta{display:flex;flex-direction:column;align-items:flex-end;gap:12px}.footer-linkedin{color:#c9a75d;font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;border-bottom:1px solid rgba(201,167,93,.45);padding-bottom:3px}.footer-linkedin:hover{color:var(--white);border-color:var(--white)}@media(max-width:560px){.footer-meta{align-items:flex-start}}
+.contact-actions{display:flex;flex-direction:column;align-items:flex-end;gap:14px}.contact-actions .button-light{margin-bottom:0}@media(max-width:900px){.contact-actions{align-items:flex-start}}
+.footer-meta p:nth-child(2){display:block}
+@media(min-width:901px){.contact-actions{align-items:stretch}.contact-actions .button-light{justify-content:space-between}}
