@@ -25,3 +25,14 @@
 .contact-actions{display:flex;flex-direction:column;align-items:flex-end;gap:14px}.contact-actions .button-light{margin-bottom:0}@media(max-width:900px){.contact-actions{align-items:flex-start}}
 .footer-meta p:nth-child(2){display:block}
 @media(min-width:901px){.contact-actions{align-items:stretch}.contact-actions .button-light{justify-content:space-between}}
+
+/* Wordmark — matched to the banner lockup: heavy Khmer serif over bold Times-style English, both lines the same width */
+:root{--banner-gold:#b1802d;--banner-navy:#073361}
+.brand{gap:3px}
+.brand .brand-copy,.footer-brand .brand-copy{--wm:190px;height:auto;transform:none;justify-content:center;gap:0}
+.brand .brand-logo{width:72px;height:72px}
+.brand .brand-khmer,.footer-brand .brand-khmer{font-family:"Noto Serif Khmer","Khmer OS System",serif;font-weight:800;font-size:calc(var(--wm)/10.92);line-height:1.2;margin:0 0 .06em;color:var(--banner-gold);white-space:nowrap}
+.brand .brand-copy strong,.footer-brand .brand-copy strong{font-family:Tinos,"Times New Roman",Times,serif;font-weight:700;font-size:calc(var(--wm)/9.877);line-height:1;letter-spacing:-.025em;word-spacing:.1em;text-transform:uppercase;white-space:nowrap}
+.brand .brand-english-main{color:var(--banner-navy)!important}
+.brand .brand-english-accent,.footer-brand .brand-english-accent{color:#b3822d!important}
+@media(max-width:560px){.brand .brand-copy,.footer-brand .brand-copy{--wm:147px;height:auto}.brand .brand-logo{width:56px;height:56px}.brand .brand-khmer,.footer-brand .brand-khmer{font-size:calc(var(--wm)/10.92);margin-bottom:.06em}.brand .brand-copy strong,.footer-brand .brand-copy strong{font-size:calc(var(--wm)/9.877)}}
