@@ -79,3 +79,27 @@ html.focus-ready .focus-text:not(.reveal):not(.is-focus),html.focus-ready .focus
 /* Hero sunburst: two rings, enlarged to fill the space */
 .hero-sun{right:-20vw;width:max(90vh,800px)}
 @media(max-width:900px){.hero-sun{right:-48vw;width:max(115vw,500px)}}
+
+/* ---- Phnom Penh skyline theme: palette sampled from the hero footage ---- */
+:root{--ivory:#eaf0f3;--paper:#f6f9fa;--navy:#0e2231;--navy-2:#16394b;--line:#cbd7de;--muted:#5d6f79;--sky:#89aed0;--teal:#1f6f7a;--roof:#b4563b}
+.hero{background:#16394b;color:#fff;isolation:isolate}
+.hero-video,.hero-poster{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-3}
+.hero-shade{position:absolute;inset:0;z-index:-2;background:linear-gradient(95deg,rgba(9,28,42,.9) 0%,rgba(12,38,56,.7) 42%,rgba(14,45,64,.18) 78%,rgba(14,45,64,.05) 100%),linear-gradient(0deg,rgba(9,28,42,.55),rgba(9,28,42,0) 35%)}
+.hero .eyebrow{color:#c9a85c}.hero .lede{color:#e3edf2}.hero h1{color:#fff;text-shadow:0 2px 30px rgba(6,20,32,.35)}
+.hero .button-primary{background:#fff;color:var(--navy);border-color:#fff}.hero .button-primary:hover{background:#c9a85c;border-color:#c9a85c}
+.hero .text-link{border-color:rgba(255,255,255,.7);color:#fff}
+.hero h1:hover{color:#bfe3ea}
+.hero-art{display:none}
+.page-hero{position:relative;isolation:isolate;color:#fff;background:#16394b var(--page-bg,url(assets/bg-tower.jpg)) center/cover no-repeat}
+.page-hero:before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(95deg,rgba(9,28,42,.9),rgba(12,38,56,.72) 55%,rgba(14,45,64,.3))}
+.page-hero .eyebrow{color:#c9a85c}.page-hero p{color:#e3edf2}.page-hero h1{color:#fff}.page-hero h1:hover{color:#bfe3ea}
+.page-hero-mark{display:none}
+.contact{background:linear-gradient(135deg,#1d4e5f,#16394b)}
+.technology{background:linear-gradient(160deg,#0e2231,#16394b)}
+footer{background:#08161f}
+.site-header{background:rgba(246,249,250,.94)}
+@media(max-width:900px){.hero-shade{background:linear-gradient(0deg,rgba(9,28,42,.88),rgba(12,38,56,.6))}}
+@media(prefers-reduced-motion:reduce){.hero-video{display:none}.hero{background:#16394b url(assets/hero-poster.jpg) center/cover}}
+.hero-note{display:none}
+.page-hero .page-hero-copy p:not(.eyebrow),.page-hero-copy>p:not(.eyebrow){color:#e3edf2!important}
+.page-hero .page-hero-copy .eyebrow{color:#c9a85c!important}
