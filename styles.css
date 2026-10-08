@@ -217,7 +217,7 @@ body.tinted .values,body.tinted .technology-services,body.tinted .team-principle
 .hero-street{background:url(assets/careers-street-inset.webp?v=2) right bottom/auto 100% no-repeat,linear-gradient(90deg,#17476f 0%,#2a78b4 55%,#4aa0d8 100%)!important}
 @media(max-width:900px){.hero-flag,.hero-street{background-size:auto 75%,100% 100%}}
 /* Cambridge story: rainforest tone (swap in a photo via --origin-photo) */
-body.tinted .origin{background:linear-gradient(rgba(8,38,24,.62),rgba(8,38,24,.78)),var(--origin-photo,radial-gradient(120% 90% at 20% 10%,#3f8a57 0%,#1f5a3a 45%,#0e3322 100%)) center/cover!important;color:#f1f6f1}
+body.tinted .origin{background:linear-gradient(rgba(8,38,24,.50),rgba(8,38,24,.68)),var(--origin-photo,radial-gradient(120% 90% at 20% 10%,#3f8a57 0%,#1f5a3a 45%,#0e3322 100%)) center/cover!important;color:#f1f6f1}
 .tinted .origin .section-heading h2,.tinted .origin-lead{color:#fff}
 .tinted .origin-copy,.tinted .origin-copy p{color:#dbe8dd}
 .tinted .origin .section-kicker{color:#f0c96b}
