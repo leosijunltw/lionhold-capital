@@ -154,7 +154,6 @@ body.tinted:before{filter:blur(36px) saturate(1.5)}
 .tinted .origin .section-kicker{color:#3d6454}
 .tinted .origin-grid{border-top-color:rgba(16,48,60,.25)}
 body.plain{background:#fff}
-body.plain main section:not(.page-hero){background:#fff!important}
 .plain footer{background:linear-gradient(rgba(8,24,38,.9),rgba(8,24,38,.94)),var(--photo) center/cover}
 
 .tinted .team-principle,.plain .team-principle{background:linear-gradient(rgba(10,30,48,.8),rgba(10,30,48,.9)),var(--photo) center/cover!important;color:#fff}
@@ -186,3 +185,22 @@ body.tinted .value-grid article{background:transparent!important;backdrop-filter
 .contact-linkedin:hover{background:rgba(255,255,255,.14)!important}
 .li-badge{display:inline-grid;place-items:center;width:24px;height:24px;border-radius:4px;background:#0a66c2;color:#fff;font:700 13px/1 Arial,sans-serif}
 body.tinted .approach-steps p,.tinted .capability-card p{color:#3a4c58}
+
+/* ---- Round 5 ---- */
+body[style*="bg-about-flag"] .page-hero{background-position:right center}
+body.tinted .origin{background:linear-gradient(135deg,#ffb81c 0%,#e8a312 55%,#b98200 100%)!important;color:#1d1a14}
+.tinted .origin .section-heading h2,.tinted .origin-lead{color:#1d1a14}
+.tinted .origin-copy,.tinted .origin-copy p{color:#2a2417}
+.tinted .origin .section-kicker{color:#7b1a2f}
+.tinted .origin-grid{border-top-color:rgba(29,26,20,.3)}
+/* orange capitals: larger everywhere */
+.eyebrow,.section-kicker{font-size:15px;letter-spacing:.22em}
+.team-role{font-size:14px;letter-spacing:.18em}
+.team-bio .bio-heading{font-size:14px;letter-spacing:.18em}
+.division-heading p{font-size:14px;letter-spacing:.16em}
+.footer-linkedin{font-size:14px;letter-spacing:.14em}
+.linkedin-link,.profile-link{font-size:14px;letter-spacing:.14em}
+.contact-label{font-size:14px}
+.tech-center span,.tech-center small{font-size:12px}
+.capability-card>span,.approach-steps span,.value-grid span{font-size:14px}
+@media(max-width:560px){.eyebrow,.section-kicker{font-size:13px;letter-spacing:.18em}.team-role,.division-heading p{font-size:13px}}
