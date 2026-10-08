@@ -109,3 +109,29 @@ footer{background:#08161f}
 .page-hero{text-shadow:0 1px 18px rgba(6,20,32,.35)}
 .careers-hero:before,.compact-page-hero:before{background:linear-gradient(95deg,rgba(9,28,42,.88) 0%,rgba(12,38,56,.66) 50%,rgba(14,45,64,.1) 85%)}
 @media(max-width:900px){.page-hero:before,.careers-hero:before,.compact-page-hero:before{background:linear-gradient(180deg,rgba(9,28,42,.78),rgba(12,38,56,.7))}}
+
+/* ---- Header floats over each page's picture ---- */
+.site-header{position:fixed;left:0;right:0;top:0;background:linear-gradient(180deg,rgba(8,24,38,.62),rgba(8,24,38,0));border-bottom:1px solid transparent;color:#fff;backdrop-filter:none;transition:background .35s ease,border-color .35s ease,backdrop-filter .35s ease,height .3s ease}
+.site-header.scrolled{background:rgba(12,34,52,.82);border-bottom-color:rgba(255,255,255,.14);backdrop-filter:blur(14px) saturate(1.2);-webkit-backdrop-filter:blur(14px) saturate(1.2)}
+.site-header nav a,.menu-toggle{color:#fff}
+.site-header nav a:not(.nav-cta):hover{border-color:#c9a85c}
+.site-header nav a[aria-current="page"]{border-color:#c9a85c}
+.nav-cta{border-color:rgba(255,255,255,.75)}.nav-cta:hover{background:#fff;color:#0c2234!important}
+.hero{min-height:100svh;padding-top:140px}
+.page-hero{padding-top:clamp(150px,16vw,210px)}
+@media(max-width:1120px){.site-header nav{background:rgba(12,34,52,.96);border-bottom:1px solid rgba(255,255,255,.14)}}
+
+/* ---- Pages below the picture: a soft wash of that page's photo ---- */
+body.tinted{background:transparent}
+html{background:#f1f5f8}
+body.tinted:before{content:"";position:fixed;inset:-60px;z-index:-2;background:var(--photo) center/cover;filter:blur(46px) saturate(1.35)}
+body.tinted:after{content:"";position:fixed;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(246,249,251,.84),rgba(246,249,251,.9))}
+body.tinted main section:not(.page-hero):not(.technology-services):not(.values):not(.contact){background:transparent!important}
+.tinted .capability-card,.tinted .approach-steps article,.tinted .fee-panel,.tinted .team-profile,.tinted .career-details,.tinted .career-track{background:rgba(255,255,255,.55);backdrop-filter:blur(6px)}
+.tinted .technology-services,.tinted .values{background:linear-gradient(rgba(10,30,48,.8),rgba(10,30,48,.9)),var(--photo) center/cover}
+.tinted footer{background:linear-gradient(rgba(8,24,38,.9),rgba(8,24,38,.94)),var(--photo) center/cover}
+.tinted .contact{background:linear-gradient(135deg,rgba(18,58,76,.9),rgba(12,36,54,.92)),var(--photo) center/cover}
+body.tinted:after{background:linear-gradient(180deg,rgba(244,248,251,.74),rgba(244,248,251,.84))}
+body.tinted:before{filter:blur(36px) saturate(1.5)}
+.tinted .technology-services .capability-card,.tinted .values .value-grid article{background:rgba(255,255,255,.07)!important;border-color:rgba(255,255,255,.22)!important;color:#fff}
+.tinted .technology-services .capability-card p,.tinted .values p{color:#d3dde4}

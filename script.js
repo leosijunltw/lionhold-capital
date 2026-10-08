@@ -28,3 +28,4 @@ document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
   })};
   window.addEventListener('scroll',onScroll,{passive:true});
 })();
+(()=>{const h=document.querySelector('.site-header');if(!h)return;const f=()=>h.classList.toggle('scrolled',window.scrollY>40);f();window.addEventListener('scroll',f,{passive:true})})();
