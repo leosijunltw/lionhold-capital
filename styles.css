@@ -75,3 +75,7 @@ html.focus-ready .focus-text:not(.reveal):not(.is-focus),html.focus-ready .focus
 @keyframes dust-rise{0%{transform:translate3d(0,0,0);opacity:0}12%{opacity:var(--o)}88%{opacity:var(--o)}100%{transform:translate3d(30px,-105vh,0);opacity:0}}
 @media(max-width:900px){.hero-sun{right:-34vw;width:max(80vw,420px)}.sun-ring-a{opacity:.13}.sun-ring-b{opacity:.1}.sun-line{stroke-opacity:.14}}
 @media(prefers-reduced-motion:reduce){.sun-ring,.sun-glow,.hero-dust i{animation:none}.hero-dust{display:none}}
+
+/* Hero sunburst: two rings, enlarged to fill the space */
+.hero-sun{right:-20vw;width:max(90vh,800px)}
+@media(max-width:900px){.hero-sun{right:-48vw;width:max(115vw,500px)}}
