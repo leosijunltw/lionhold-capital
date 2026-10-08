@@ -188,7 +188,7 @@ body.tinted .approach-steps p,.tinted .capability-card p{color:#3a4c58}
 
 /* ---- Round 5 ---- */
 body[style*="bg-about-flag"] .page-hero{background-position:right center}
-body.tinted .origin{background:linear-gradient(135deg,#ffb81c 0%,#e8a312 55%,#b98200 100%)!important;color:#1d1a14}
+body.tinted .origin{background:url(assets/angkor-flag-mark.webp?v=3) right 1vw bottom 4%/min(44vw,700px) auto no-repeat,linear-gradient(115deg,#2b0a14 0%,#5c1220 55%,#7a1a2a 100%)!important;color:#f6eeee}
 .tinted .origin .section-heading h2,.tinted .origin-lead{color:#1d1a14}
 .tinted .origin-copy,.tinted .origin-copy p{color:#2a2417}
 .tinted .origin .section-kicker{color:#7b1a2f}
@@ -216,8 +216,7 @@ body.tinted .values,body.tinted .technology-services,body.tinted .team-principle
 /* Careers: whole street scene (towers + road + cars) anchored right */
 .hero-street{background:url(assets/careers-street-inset.webp?v=2) right bottom/auto 100% no-repeat,linear-gradient(90deg,#17476f 0%,#2a78b4 55%,#4aa0d8 100%)!important}
 @media(max-width:900px){.hero-flag,.hero-street{background-size:auto 75%,100% 100%}}
-/* Cambridge story: rainforest tone (swap in a photo via --origin-photo) */
-body.tinted .origin{background:linear-gradient(rgba(8,38,24,.50),rgba(8,38,24,.68)),var(--origin-photo,radial-gradient(120% 90% at 20% 10%,#3f8a57 0%,#1f5a3a 45%,#0e3322 100%)) center/cover!important;color:#f1f6f1}
+/* Cambridge story: Angkor Wat from the Khmer flag */
 .tinted .origin .section-heading h2,.tinted .origin-lead{color:#fff}
 .tinted .origin-copy,.tinted .origin-copy p{color:#dbe8dd}
 .tinted .origin .section-kicker{color:#f0c96b}
