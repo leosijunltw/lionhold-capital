@@ -57,3 +57,21 @@ html.focus-ready .focus-text:not(.reveal):not(.is-focus),html.focus-ready .focus
   .focus-big.is-focus,.hero h1:hover,.page-hero h1:hover,.statement-copy:hover,.services-intro-copy p:hover,.fee-panel p:hover,.origin-lead:hover,.section-heading h2:hover,.division-heading h3:hover,.team-profile h3:hover,.capability-card:hover h3,.approach-steps article:hover h3,.value-grid article:hover h3,.contact h2:hover,.team-principle blockquote:hover{scale:none!important}
   .hero h1,.page-hero h1,.statement-copy,.capability-card h3,.approach-steps h3{transition:color .2s linear}
 }
+
+/* ---------- Animated hero background: slow-turning sunburst + drifting gold light (pure CSS/SVG, no video) ---------- */
+.hero-art:before,.hero-art:after{display:none}
+.hero-sun{position:absolute;right:-14vw;top:50%;width:max(62vh,560px);aspect-ratio:1;translate:0 -50%;pointer-events:none}
+.hero-sun svg{width:100%;height:100%;overflow:visible}
+.sun-ring{transform-origin:500px 500px;transform-box:view-box}
+.sun-ring-a{fill:#8f6b24;opacity:.2;animation:sun-turn 240s linear infinite}
+.sun-ring-b{fill:#b1802d;opacity:.16;animation:sun-turn 160s linear infinite reverse}
+.sun-line{fill:none;stroke:#8f6b24;stroke-opacity:.2;stroke-width:1.5}
+.sun-line-2{stroke-dasharray:3 9;stroke-opacity:.28}
+.sun-glow{transform-origin:500px 500px;transform-box:view-box;animation:sun-breathe 9s ease-in-out infinite}
+.hero-dust{position:absolute;inset:0;overflow:hidden;pointer-events:none}
+.hero-dust i{position:absolute;left:var(--x);bottom:-12px;width:var(--s);height:var(--s);border-radius:50%;background:radial-gradient(circle,#e3b85a,rgba(227,184,90,0));opacity:0;animation:dust-rise var(--d) linear var(--delay) infinite}
+@keyframes sun-turn{to{transform:rotate(360deg)}}
+@keyframes sun-breathe{0%,100%{opacity:.55;transform:scale(.94)}50%{opacity:1;transform:scale(1.06)}}
+@keyframes dust-rise{0%{transform:translate3d(0,0,0);opacity:0}12%{opacity:var(--o)}88%{opacity:var(--o)}100%{transform:translate3d(30px,-105vh,0);opacity:0}}
+@media(max-width:900px){.hero-sun{right:-34vw;width:max(80vw,420px)}.sun-ring-a{opacity:.13}.sun-ring-b{opacity:.1}.sun-line{stroke-opacity:.14}}
+@media(prefers-reduced-motion:reduce){.sun-ring,.sun-glow,.hero-dust i{animation:none}.hero-dust{display:none}}
