@@ -32,3 +32,28 @@
 .footer-brand{display:block}
 .footer-wordmark{display:block;height:48px;width:auto}
 @media(max-width:560px){.brand-lockup{height:50px}.footer-wordmark{height:38px}}
+
+/* ---------- Interactive text: hover + scroll focus (inspired by smean.ai) ----------
+   Hover: headings and key statements grow slightly and ease into teal.
+   Scroll: text blocks brighten (and the big statements grow a touch) as they reach the middle of the screen. */
+:root{--ink-hover:#1b7f86;--ink-hover-dark:#68cabd;--ink-hover-gold:#102332;--ease-out:cubic-bezier(.2,.8,.2,1)}
+body{overflow-x:clip}
+.hero h1,.page-hero h1,.statement-copy,.services-intro-copy p,.fee-panel p,.origin-lead,.section-heading h2,.division-heading h3,.team-profile h3,.career-track-heading h2,.career-details h3,.capability-card h3,.approach-steps h3,.value-grid h3,.technology h2,.team-principle blockquote,.contact h2,.service-heading-copy p{transform-origin:left center;transition:color .5s var(--ease-out),scale .5s var(--ease-out),opacity .7s ease,transform .7s ease}
+@media (hover:hover) and (pointer:fine){
+  .hero h1:hover,.page-hero h1:hover,.statement-copy:hover,.services-intro-copy p:hover,.fee-panel p:hover,.origin-lead:hover,.section-heading h2:hover,.division-heading h3:hover,.team-profile h3:hover,.career-track-heading h2:hover,.career-details h3:hover,.approach-steps article:hover h3,.capability-card:hover h3{color:var(--ink-hover);scale:1.03}
+  .capability-card:hover h3,.approach-steps article:hover h3{scale:1.05}
+  .technology h2:hover,.technology-services .section-heading h2:hover,.technology-services .service-heading-copy p:hover,.values .section-heading h2:hover,.value-grid article:hover h3,.service-grid-dark .capability-card:hover h3{color:var(--ink-hover-dark);scale:1.03}
+  .value-grid article:hover h3,.service-grid-dark .capability-card:hover h3{scale:1.05}
+  .contact h2:hover,.team-principle blockquote:hover{color:var(--ink-hover-gold);scale:1.03}
+}
+/* Scroll focus — switched on by script.js (html.focus-ready), so nothing dims without JavaScript */
+html.focus-ready .focus-text:not(.reveal):not(.is-focus),html.focus-ready .focus-text.reveal.visible:not(.is-focus){opacity:.5}
+.focus-text{transition:opacity .7s ease,scale .6s var(--ease-out),color .5s var(--ease-out),transform .7s ease}
+.focus-big{transform-origin:left center}
+.focus-big.is-focus{scale:1.02}
+@media (hover:hover) and (pointer:fine){.focus-big.is-focus:hover{scale:1.03}}
+@media (prefers-reduced-motion:reduce){
+  html.focus-ready .focus-text:not(.is-focus){opacity:1!important}
+  .focus-big.is-focus,.hero h1:hover,.page-hero h1:hover,.statement-copy:hover,.services-intro-copy p:hover,.fee-panel p:hover,.origin-lead:hover,.section-heading h2:hover,.division-heading h3:hover,.team-profile h3:hover,.capability-card:hover h3,.approach-steps article:hover h3,.value-grid article:hover h3,.contact h2:hover,.team-principle blockquote:hover{scale:none!important}
+  .hero h1,.page-hero h1,.statement-copy,.capability-card h3,.approach-steps h3{transition:color .2s linear}
+}
