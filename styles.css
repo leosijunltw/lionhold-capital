@@ -188,7 +188,7 @@ body.tinted .approach-steps p,.tinted .capability-card p{color:#3a4c58}
 
 /* ---- Round 5 ---- */
 body[style*="bg-about-flag"] .page-hero{background-position:right center}
-body.tinted .origin{background:url(assets/angkor-flag-mark.webp?v=3) right 1vw bottom 4%/min(44vw,700px) auto no-repeat,linear-gradient(115deg,#2b0a14 0%,#5c1220 55%,#7a1a2a 100%)!important;color:#f6eeee}
+body.tinted .origin{background:url(assets/angkor-flag-mark.webp?v=4) right 1vw bottom 4%/min(44vw,700px) auto no-repeat,linear-gradient(115deg,#2b0a14 0%,#5c1220 55%,#7a1a2a 100%)!important;color:#f6eeee}
 .tinted .origin .section-heading h2,.tinted .origin-lead{color:#1d1a14}
 .tinted .origin-copy,.tinted .origin-copy p{color:#2a2417}
 .tinted .origin .section-kicker{color:#7b1a2f}
