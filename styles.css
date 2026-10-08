@@ -90,7 +90,7 @@ html.focus-ready .focus-text:not(.reveal):not(.is-focus),html.focus-ready .focus
 .hero .text-link{border-color:rgba(255,255,255,.7);color:#fff}
 .hero h1:hover{color:#bfe3ea}
 .hero-art{display:none}
-.page-hero{position:relative;isolation:isolate;color:#fff;background:#16394b var(--page-bg,url(assets/bg-tower.jpg)) center/cover no-repeat}
+.page-hero{position:relative;isolation:isolate;color:#fff;background:#16394b var(--page-bg,url(assets/bg-team-aerial.jpg)) center/cover no-repeat}
 .page-hero:before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(95deg,rgba(9,28,42,.9),rgba(12,38,56,.72) 55%,rgba(14,45,64,.3))}
 .page-hero .eyebrow{color:#c9a85c}.page-hero p{color:#e3edf2}.page-hero h1{color:#fff}.page-hero h1:hover{color:#bfe3ea}
 .page-hero-mark{display:none}
@@ -103,3 +103,9 @@ footer{background:#08161f}
 .hero-note{display:none}
 .page-hero .page-hero-copy p:not(.eyebrow),.page-hero-copy>p:not(.eyebrow){color:#e3edf2!important}
 .page-hero .page-hero-copy .eyebrow{color:#c9a85c!important}
+/* per-page photo headers */
+.page-hero{background-position:center;min-height:560px}
+.page-hero:before{background:linear-gradient(95deg,rgba(9,28,42,.82) 0%,rgba(12,38,56,.55) 45%,rgba(14,45,64,.08) 80%)}
+.page-hero{text-shadow:0 1px 18px rgba(6,20,32,.35)}
+.careers-hero:before,.compact-page-hero:before{background:linear-gradient(95deg,rgba(9,28,42,.88) 0%,rgba(12,38,56,.66) 50%,rgba(14,45,64,.1) 85%)}
+@media(max-width:900px){.page-hero:before,.careers-hero:before,.compact-page-hero:before{background:linear-gradient(180deg,rgba(9,28,42,.78),rgba(12,38,56,.7))}}
