@@ -222,3 +222,8 @@ body.tinted .origin{background:linear-gradient(rgba(8,38,24,.62),rgba(8,38,24,.7
 .tinted .origin-copy,.tinted .origin-copy p{color:#dbe8dd}
 .tinted .origin .section-kicker{color:#f0c96b}
 .tinted .origin-grid{border-top-color:rgba(255,255,255,.35)}
+/* Round 7 */
+.hero-flag{background:url(assets/about-flag-inset.webp?v=2) right 6vw center/auto 112% no-repeat,linear-gradient(90deg,#46596f 0%,#7388a0 45%,#afbbc5 100%)!important}
+@media(max-width:900px){.hero-flag{background-position:right 0 center,0 0}}
+body[style*="bg-fees-statue"] .page-hero{background-size:120% auto;background-position:left 25%;background-repeat:no-repeat}
+@media(max-width:900px){body[style*="bg-fees-statue"] .page-hero{background-size:cover;background-position:60% center}}
