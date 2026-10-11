@@ -241,3 +241,19 @@ body[style*="bg-about-flag"] .values{background-position:center,right center!imp
 @media(max-width:560px){.footer-social{justify-content:flex-start}}
 .contact-social{display:flex;flex-wrap:wrap;gap:12px}
 .contact-social{gap:10px}.contact-social .button{padding-left:15px;padding-right:15px;gap:8px;font-size:15px}@media(min-width:901px){.contact-social .li-badge{display:none}}
+/* Social: cards + footer icons */
+.contact-social{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px!important;width:min(100%,460px)}
+.social-card{display:flex;align-items:center;gap:14px;padding:13px 16px;border:1px solid rgba(255,255,255,.32);border-radius:12px;background:rgba(255,255,255,.07);color:#fff;text-decoration:none;transition:background .2s,border-color .2s,transform .2s}
+.social-card:hover{background:rgba(255,255,255,.16);border-color:rgba(255,255,255,.7);transform:translateY(-2px)}
+.social-icon{flex:none;width:40px;height:40px;border-radius:10px;display:grid;place-items:center;background:rgba(255,255,255,.12);color:#fff}
+.social-linkedin .social-icon{background:#0a66c2}.social-facebook .social-icon{background:#1877f2}
+.social-instagram .social-icon{background:linear-gradient(45deg,#f9a03f,#e1306c 55%,#833ab4)}
+.social-tiktok .social-icon{background:#0b0b0f;box-shadow:inset 1.5px 0 0 #25f4ee,inset -1.5px 0 0 #fe2c55}
+.social-text{display:flex;flex-direction:column;min-width:0;line-height:1.25}
+.social-text b{font-size:15px;font-weight:600;letter-spacing:.01em}
+.social-text small{font-size:12px;color:rgba(255,255,255,.7);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.social-arrow{margin-left:auto;opacity:.7;font-size:15px}
+@media(max-width:480px){.contact-social{grid-template-columns:1fr}}
+.footer-social{display:flex!important;gap:12px!important;flex-wrap:nowrap}
+.social-dot{width:40px;height:40px;border-radius:50%;display:grid;place-items:center;color:#c9a75d;border:1px solid rgba(201,167,93,.5)!important;padding:0!important;transition:background .2s,color .2s,transform .2s}
+.social-dot:hover{background:#c9a75d;color:#0b1d2e!important;transform:translateY(-2px)}
