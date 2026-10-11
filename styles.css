@@ -264,3 +264,4 @@ body[style*="bg-about-flag"] .values{background-position:center,right center!imp
 .social-dot.social-instagram{background:linear-gradient(45deg,#f9a03f,#e1306c 55%,#833ab4)}
 .social-dot.social-tiktok{background:#0b0b0f;box-shadow:inset 2px 0 0 #25f4ee,inset -2px 0 0 #fe2c55}
 .social-dot:hover{filter:brightness(1.15);color:#fff!important;transform:translateY(-2px)}
+.social-card{gap:12px;padding:13px 12px 13px 14px}.social-text small{font-size:11.5px}.social-arrow{font-size:14px}
