@@ -265,3 +265,25 @@ body[style*="bg-about-flag"] .values{background-position:center,right center!imp
 .social-dot.social-tiktok{background:#0b0b0f;box-shadow:inset 2px 0 0 #25f4ee,inset -2px 0 0 #fe2c55}
 .social-dot:hover{filter:brightness(1.15);color:#fff!important;transform:translateY(-2px)}
 .social-card{gap:12px;padding:13px 12px 13px 14px}.social-text small{font-size:11.5px}.social-arrow{font-size:14px}
+/* ===== Services page: chapter layout (matches Lionhold Education) ===== */
+.svc .service-group:not(.technology-services){counter-reset:svc}
+.svc .financial-division{display:grid;grid-template-columns:.8fr 1.2fr;gap:0 clamp(30px,6vw,96px);align-items:start;padding:clamp(40px,5vw,70px) 0;margin-top:0;border-top:1px solid rgba(255,255,255,.0);counter-increment:svc;border-top:1px solid var(--line)}
+.svc .financial-division:first-of-type,.svc .section-heading+.financial-division{border-top:2px solid var(--line)}
+.svc .division-heading{display:block;grid-column:1;grid-row:1/span 4;margin:0;position:sticky;top:130px}
+.svc .division-heading p{display:none}
+.svc .division-heading:before{content:counter(svc,decimal-leading-zero);display:block;font-family:var(--serif);font-size:clamp(70px,8vw,120px);line-height:.85;color:#c9a85c;margin-bottom:16px}
+.svc .division-heading h3{margin:0;font-family:var(--serif);font-weight:400;font-size:clamp(32px,3.4vw,50px);line-height:1.05}
+.svc .financial-division .capability-grid{grid-column:2;grid-template-columns:1fr!important;gap:16px;border:0!important}
+.svc .capability-card{position:relative;min-height:0!important;padding:clamp(22px,2.6vw,34px) clamp(22px,2.6vw,34px) clamp(22px,2.6vw,34px) clamp(78px,7vw,96px)!important;border:1px solid var(--line)!important;border-radius:8px;background:rgba(255,255,255,.72)!important;-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);box-shadow:0 1px 0 rgba(255,255,255,.6) inset;transition:transform .25s,box-shadow .25s,border-color .25s}
+.svc .capability-card:hover{transform:translateY(-3px);box-shadow:0 18px 40px rgba(8,24,38,.14);border-color:#c9a85c!important}
+.svc .capability-card>span{position:absolute;left:clamp(20px,2.4vw,30px);top:clamp(22px,2.6vw,34px);width:42px;height:42px;border-radius:50%;display:grid;place-items:center;background:#0e2231;border:2px solid #c9a85c;color:#e2c27a!important;font-family:var(--serif);font-size:16px!important;letter-spacing:0!important;margin:0}
+.svc .capability-card h3{margin:2px 0 10px;font-size:clamp(23px,2.1vw,29px)}
+.svc .capability-card p{margin:0;font-size:16px;line-height:1.6}
+.svc .financial-division .audit-note{grid-column:2;margin:18px 0 0;padding:16px 20px;border-left:3px solid #c9a85c;background:rgba(255,255,255,.55);border-radius:0 6px 6px 0;font-size:14px}
+/* Technology: three raised cards on the dark band */
+.svc .service-grid-dark{grid-template-columns:repeat(3,1fr)!important;gap:clamp(16px,2.2vw,28px);border:0!important}
+.svc .service-grid-dark .capability-card{padding:clamp(26px,3vw,38px)!important;background:rgba(255,255,255,.07)!important;border-color:rgba(255,255,255,.22)!important;display:flex;flex-direction:column}
+.svc .service-grid-dark .capability-card>span{position:static;margin-bottom:22px;background:rgba(255,255,255,.08)}
+.svc .service-grid-dark .capability-card:hover{background:rgba(255,255,255,.12)!important;box-shadow:0 22px 50px rgba(0,0,0,.3)}
+@media(max-width:1000px){.svc .financial-division{grid-template-columns:1fr}.svc .division-heading{position:static;grid-row:auto;margin-bottom:26px}.svc .financial-division .capability-grid,.svc .financial-division .audit-note{grid-column:1}.svc .service-grid-dark{grid-template-columns:1fr!important}}
+@media(max-width:560px){.svc .capability-card{padding:78px 22px 24px!important}.svc .capability-card>span{top:22px;left:22px}}
