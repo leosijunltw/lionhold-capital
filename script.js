@@ -29,3 +29,17 @@ document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
   window.addEventListener('scroll',onScroll,{passive:true});
 })();
 (()=>{const h=document.querySelector('.site-header');if(!h)return;const f=()=>h.classList.toggle('scrolled',window.scrollY>40);f();window.addEventListener('scroll',f,{passive:true})})();
+
+/* Expandable service cards (How it works) */
+(function(){
+  document.querySelectorAll('.capability-card.expandable').forEach(function(card){
+    var btn=card.querySelector('.card-toggle');
+    if(!btn)return;
+    function toggle(){
+      var open=card.classList.toggle('open');
+      btn.setAttribute('aria-expanded',open?'true':'false');
+    }
+    btn.addEventListener('click',function(e){e.stopPropagation();toggle();});
+    card.addEventListener('click',function(e){if(e.target.closest('a'))return;toggle();});
+  });
+})();

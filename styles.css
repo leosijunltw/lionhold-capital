@@ -326,3 +326,16 @@ body.tinted.home .home-journey p{margin:0;max-width:300px}
 .invest-flow li b{display:block;margin:0 0 6px;font-family:var(--serif);font-weight:400;font-size:clamp(21px,1.9vw,25px);color:#fff;line-height:1.2}
 .invest-flow li span{display:block;font-size:15.5px;line-height:1.6;color:#c9d6de}
 @media(max-width:1000px){.svc .financial-division .invest-flow{grid-column:1}}
+/* Expandable card */
+.capability-card.expandable{cursor:pointer}
+.card-toggle{margin-top:18px;display:inline-flex;align-items:center;gap:10px;padding:9px 16px;border:1px solid #c9a85c;border-radius:99px;background:rgba(201,168,92,.12);color:#6f5217;font:600 13px/1 var(--sans);letter-spacing:.12em;text-transform:uppercase;cursor:pointer;transition:background .2s,color .2s}
+.card-toggle:hover{background:#c9a85c;color:#0e2231}
+.card-toggle i{font-style:normal;font-size:17px;line-height:1;display:inline-block;transition:transform .3s}
+.capability-card.open .card-toggle i{transform:rotate(45deg)}
+.card-expand{display:grid;grid-template-rows:0fr;transition:grid-template-rows .45s ease}
+.card-expand-inner{overflow:hidden;min-height:0}
+.capability-card.open .card-expand{grid-template-rows:1fr}
+.card-expand .invest-flow{margin-top:24px;box-shadow:none;cursor:default}
+.svc .financial-division .card-expand .invest-flow{grid-column:auto}
+.card-expand .invest-flow li span{color:#c9d6de}
+.capability-card .invest-flow li span{letter-spacing:0!important;text-transform:none!important;font-size:15.5px!important;color:#c9d6de!important;font-weight:400}
