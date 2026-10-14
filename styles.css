@@ -314,3 +314,15 @@ body.tinted.home .home-journey article:hover>span{transform:scale(1.1);box-shado
 body.tinted.home .home-journey h3{margin:0 0 10px;font-size:clamp(26px,2.4vw,34px)}
 body.tinted.home .home-journey p{margin:0;max-width:300px}
 @media(max-width:900px){body.tinted.home .home-journey{grid-template-columns:1fr;gap:0;padding-top:20px}body.tinted.home .home-journey:before{left:27px;right:auto;top:48px;bottom:48px;width:2px;height:auto;background:linear-gradient(180deg,#c9a85c,rgba(201,168,92,.35))}body.tinted.home .home-journey article{padding:0 0 34px 80px!important;border:0!important}body.tinted.home .home-journey article>span{position:absolute;left:0;top:0;margin:0}}
+/* Overseas investing flow */
+.invest-flow{margin-top:22px;padding:clamp(22px,2.6vw,32px);border-radius:10px;background:linear-gradient(150deg,#13324a,#0d2234);color:#e3edf2;box-shadow:0 24px 50px rgba(8,24,38,.22)}
+.svc .financial-division .invest-flow{grid-column:2}
+.flow-label{margin:0 0 22px;font-size:12px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:#e2c27a}
+.invest-flow ol{list-style:none;margin:0;padding:0;counter-reset:f;position:relative}
+.invest-flow ol:before{content:"";position:absolute;left:19px;top:20px;bottom:20px;width:2px;background:linear-gradient(180deg,#c9a85c,rgba(201,168,92,.3))}
+.invest-flow li{position:relative;padding:0 0 26px 62px;counter-increment:f}
+.invest-flow li:last-child{padding-bottom:0}
+.invest-flow li:before{content:counter(f);position:absolute;left:0;top:0;width:40px;height:40px;border-radius:50%;display:grid;place-items:center;background:#0d2234;border:2px solid #c9a85c;color:#e2c27a;font-family:var(--serif);font-size:17px}
+.invest-flow li b{display:block;margin:0 0 6px;font-family:var(--serif);font-weight:400;font-size:clamp(21px,1.9vw,25px);color:#fff;line-height:1.2}
+.invest-flow li span{display:block;font-size:15.5px;line-height:1.6;color:#c9d6de}
+@media(max-width:1000px){.svc .financial-division .invest-flow{grid-column:1}}
