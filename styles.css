@@ -340,3 +340,15 @@ body.tinted.home .home-journey p{margin:0;max-width:300px}
 .card-expand .invest-flow li span{color:#c9d6de}
 .capability-card .invest-flow li span{letter-spacing:0!important;text-transform:none!important;font-size:15.5px!important;color:#c9d6de!important;font-weight:400}
 #investment,#private-client,#audit,#credit,#technology{scroll-margin-top:94px}
+/* ===== Mobile alignment: approach timeline + values ===== */
+@media(max-width:900px){
+body.tinted.home .home-journey article,body.tinted.home .home-journey article:first-child,body.tinted.home .home-journey article:last-child{padding:0 0 34px 80px!important;min-height:56px}
+body.tinted.home .home-journey article:last-child{padding-bottom:0!important}
+body.tinted.home .home-journey article>span{left:0!important}
+body.tinted .values .value-grid{display:block;border-top:0}
+body.tinted .values .value-grid article,body.tinted .values .value-grid article:hover{margin:0!important;padding:30px 0!important;background:transparent!important;border:0!important;border-top:1px solid rgba(255,255,255,.3)!important;box-shadow:none!important;text-align:left}
+body.tinted .values .value-grid article:last-child{border-bottom:1px solid rgba(255,255,255,.3)!important}
+body.tinted .values .value-grid article span{display:block;margin:0 0 10px}
+body.tinted .values .value-grid article h3{margin:0 0 12px}
+body.tinted .values .value-grid article p{margin:0;max-width:none}
+}
